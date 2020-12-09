@@ -37,8 +37,8 @@ CREATE TABLE `category_list` (
 --
 
 INSERT INTO `category_list` (`id`, `name`) VALUES
-(1, 'Can Goods'),
-(2, 'Shampoo'),
+(1, 'Fruits and Vegetables'),
+(2, 'Meat'),
 (3, 'Hygiene'),
 (4, 'Snacks'),
 (5, 'Drinks');
@@ -53,16 +53,16 @@ CREATE TABLE `customer_list` (
   `id` int(30) NOT NULL,
   `name` text NOT NULL,
   `contact` varchar(30) NOT NULL,
-  `address` text NOT NULL
+  `email` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `customer_list`
 --
 
-INSERT INTO `customer_list` (`id`, `name`, `contact`, `address`) VALUES
-(1, 'John Smith', '8747808787', 'Sample Only'),
-(2, 'George Wilson', '+14526-5455-44', 'Sample');
+INSERT INTO `customer_list` (`id`, `name`, `contact`, `email`) VALUES
+(1, 'Rahul', '8747808787', 'rahul@gmail.com'),
+(2, 'Sushma', '9625186611', 'sassysushma@yahoo.com');
 
 -- --------------------------------------------------------
 
@@ -121,10 +121,10 @@ CREATE TABLE `product_list` (
 --
 
 INSERT INTO `product_list` (`id`, `category_id`, `sku`, `price`, `name`, `description`) VALUES
-(1, 3, '33866164', 75, 'Alcohol Name', 'Alcohol 750ml'),
-(3, 5, '91643291', 30, 'Lemon Iced Tea', 'Lemon Iced Tea 350ml'),
-(4, 4, '11762968', 10, 'Chips (big)', 'Big Chip'),
-(5, 1, '74628529', 25, 'Tuna', 'Tuna');
+(1, 1, '56254', 100, 'Apple', 'shimla red apple'),
+(3, 5, '91643', 30, 'Mountain dew', 'mountain dew drink 350ml'),
+(4, 4, '11765', 10, 'Doritos', 'Big Chips'),
+(5, 3, '74628', 25, 'Diapers', 'huggies');
 
 -- --------------------------------------------------------
 
@@ -168,10 +168,10 @@ CREATE TABLE `sales_list` (
 --
 
 INSERT INTO `sales_list` (`id`, `ref_no`, `customer_id`, `total_amount`, `amount_tendered`, `amount_change`, `date_updated`) VALUES
-(1, '00000000\r\n', 0, 250, 300, 50, '2020-09-22 15:19:22'),
-(2, '17671173\n', 2, 200, 200, 0, '2020-09-22 15:00:46'),
-(3, '16042993\n', 2, 100, 1000, 900, '2020-09-22 15:01:55'),
-(4, '50470080\n', 0, 1175, 1200, 25, '2020-09-22 15:42:59');
+(1, '18552\r\n', 0, 250, 300, 50, '2020-09-22 15:19:22'),
+(2, '17693\n', 2, 200, 200, 0, '2020-09-22 15:00:46'),
+(3, '16087\n', 2, 100, 1000, 900, '2020-09-22 15:01:55'),
+(4, '56676\n', 0, 1175, 1200, 25, '2020-09-22 15:42:59');
 
 -- --------------------------------------------------------
 
@@ -191,8 +191,8 @@ CREATE TABLE `supplier_list` (
 --
 
 INSERT INTO `supplier_list` (`id`, `supplier_name`, `contact`, `address`) VALUES
-(1, 'Supplier 1', '65524556', 'Sample Address'),
-(3, 'Supplier 2', '6546531', 'Supplier2 Address');
+(1, 'Rakesh Verma', '9765524556', 'Kolkata'),
+(3, 'Manish Malhotra', '9365465315', 'Mumbai');
 
 -- --------------------------------------------------------
 
@@ -214,7 +214,7 @@ CREATE TABLE `system_settings` (
 --
 
 INSERT INTO `system_settings` (`id`, `name`, `email`, `contact`, `cover_img`, `about_content`) VALUES
-(1, 'Online Food Ordering System', 'info@sample.com', '+6948 8542 623', '1600654680_photo-1504674900247-0877df9cc836.jpg', '&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;ABOUT US&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;b style=&quot;margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; text-align: justify;&quot;&gt;Lorem Ipsum&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#x2019;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;h2 style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;Where does it come from?&lt;/h2&gt;&lt;p style=&quot;text-align: center; margin-bottom: 15px; padding: 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400;&quot;&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.&lt;/p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;');
+(1, 'wholesale management System', 'wms@sample.com', '9876453544', '1600654680_photo-1504674900247-0877df9cc836.jpg', '&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;ABOUT US&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;b style=&quot;margin: 0px; padding: 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; text-align: justify;&quot;&gt;Lorem Ipsum&lt;/b&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#x2019;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400; text-align: justify;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; background: transparent; position: relative;&quot;&gt;&lt;span style=&quot;background: transparent; position: relative; font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;&lt;h2 style=&quot;font-size:28px;background: transparent; position: relative;&quot;&gt;Where does it come from?&lt;/h2&gt;&lt;p style=&quot;text-align: center; margin-bottom: 15px; padding: 0px; color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-weight: 400;&quot;&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &quot;de Finibus Bonorum et Malorum&quot; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &quot;Lorem ipsum dolor sit amet..&quot;, comes from a line in section 1.10.32.&lt;/p&gt;&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;');
 
 -- --------------------------------------------------------
 
@@ -225,6 +225,7 @@ INSERT INTO `system_settings` (`id`, `name`, `email`, `contact`, `cover_img`, `a
 CREATE TABLE `users` (
   `id` int(30) NOT NULL,
   `name` varchar(200) NOT NULL,
+  `gender` tinyint(1) NOT NULL DEFAULT 2 COMMENT '1= M, 2 = F',
   `username` varchar(100) NOT NULL,
   `password` varchar(200) NOT NULL,
   `type` tinyint(1) NOT NULL DEFAULT 2 COMMENT '1=admin , 2 = cashier'
@@ -234,10 +235,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `username`, `password`, `type`) VALUES
-(1, 'Administrator', 'admin', 'admin123', 1),
-(3, 'John Smith', 'jsmith', 'jsmith123', 2);
-
+INSERT INTO `users` (`id`, `name`,`gender`, `username`, `password`, `type`) VALUES
+(1, 'Administrator','1', 'admin', 'admin123', 1),
+(3, 'Apeksha','2', 'apeksha', 'appu123', 2);
 --
 -- Indexes for dumped tables
 --

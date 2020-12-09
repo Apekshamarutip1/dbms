@@ -16,6 +16,13 @@ foreach($user->fetch_array() as $k =>$v){
 			<input type="text" name="name" id="name" class="form-control" value="<?php echo isset($meta['name']) ? $meta['name']: '' ?>" required>
 		</div>
 		<div class="form-group">
+			<label for="type">Gender</label>
+			<select name="type" id="type" class="custom-select">
+				<option value="1" <?php echo isset($meta['type']) && $meta['type'] == 1 ? 'selected': '' ?>>M</option>
+				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>F</option>
+			</select>
+		</div>
+		<div class="form-group">
 			<label for="username">Username</label>
 			<input type="text" name="username" id="username" class="form-control" value="<?php echo isset($meta['username']) ? $meta['username']: '' ?>" required>
 		</div>
@@ -30,6 +37,7 @@ foreach($user->fetch_array() as $k =>$v){
 				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>Cashier</option>
 			</select>
 		</div>
+
 	</form>
 </div>
 <script>

@@ -22,7 +22,7 @@
 								<input type="text" class="form-control" name="contact">
 							</div>
 							<div class="form-group">
-								<label class="control-label">Address</label>
+								<label class="control-label">Email</label>
 								<textarea class="form-control" cols="30" rows="3" name="address"></textarea>
 							</div>
 							
@@ -64,7 +64,7 @@
 									<td class="">
 										<p>Name : <b><?php echo $row['name'] ?></b></p>
 										<p><small>Contact : <b><?php echo $row['contact'] ?></b></small></p>
-										<p><small>Address : <b><?php echo $row['address'] ?></b></small></p>
+										<p><small>Email : <b><?php echo $row['email'] ?></b></small></p>
 									</td>
 									<td class="text-center">
 										<button class="btn btn-sm btn-primary edit_customer" type="button" data-id="<?php echo $row['id'] ?>" data-name="<?php echo $row['name'] ?>" data-contact="<?php echo $row['contact'] ?>" data-address="<?php echo $row['address'] ?>" >Edit</button>
