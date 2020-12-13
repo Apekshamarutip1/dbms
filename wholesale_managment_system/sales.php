@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="col-lg-12">
 		<div class="row">
-			<button class="col-md-2 float-right btn btn-primary btn-sm" id="new_sales"><i class="fa fa-plus"></i> New Sales</button>
+			<button class="col-md-2 float-right btn btn-primary btn-sm" id="new_sales"><i class="fa fa-plus"></i> New Order</button>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
@@ -10,7 +10,7 @@
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th class="text-center">#</th>
+								<th class="text-center">Sl.No</th>
 								<th class="text-center">Date</th>
 								<th class="text-center">Reference #</th>
 								<th class="text-center">Customer</th>

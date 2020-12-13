@@ -53,16 +53,17 @@ CREATE TABLE `customer_list` (
   `id` int(30) NOT NULL,
   `name` text NOT NULL,
   `contact` varchar(30) NOT NULL,
-  `email` text NOT NULL
+  `address` text NOT NULL,
+  `email` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `customer_list`
 --
 
-INSERT INTO `customer_list` (`id`, `name`, `contact`, `email`) VALUES
-(1, 'Rahul', '8747808787', 'rahul@gmail.com'),
-(2, 'Sushma', '9625186611', 'sassysushma@yahoo.com');
+INSERT INTO `customer_list` (`id`, `name`, `contact`, `address`,`email`) VALUES
+(1, 'Rahul', '8747808787','mumbai','rahul@gmail.com'),
+(2, 'Sushma', '9625186611','bangalore','sassysushma@gmail.com');
 
 -- --------------------------------------------------------
 

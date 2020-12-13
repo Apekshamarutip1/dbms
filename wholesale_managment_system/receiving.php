@@ -10,9 +10,9 @@
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th class="text-center">#</th>
+								<th class="text-center">Sl.No</th>
 								<th class="text-center">Date</th>
-								<th class="text-center">Reference #</th>
+								<th class="text-center">Reference No</th>
 								<th class="text-center">Supplier</th>
 								<th class="text-center">Action</th>
 							</thead>

@@ -5,12 +5,12 @@
 			<div class="col-md-12">
 				<div class="card">
 					<div class="card-header">
-						<h4><b>Inventory</b></h4>
+						<h4><b>WholeSale Inventory</b></h4>
 					</div>
 					<div class="card-body">
 						<table class="table table-bordered">
 							<thead>
-								<th class="text-center">#</th>
+								<th class="text-center">Sl.No</th>
 								<th class="text-center">Product Name</th>
 								<th class="text-center">Stock In</th>
 								<th class="text-center">Stock Out</th>

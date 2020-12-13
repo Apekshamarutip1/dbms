@@ -16,7 +16,7 @@
 				<table class="table-striped table-bordered col-md-12">
 			<thead>
 				<tr>
-					<th class="text-center">#</th>
+					<th class="text-center">Sl.No</th>
 					<th class="text-center">Name</th>
 					<th class="text-center">Username</th>
 					<th class="text-center">Action</th>
@@ -52,7 +52,7 @@
 								    <a class="dropdown-item delete_user" href="javascript:void(0)" data-id = '<?php echo $row['id'] ?>'>Delete</a>
 								  </div>
 								</div>
-								</center>
+						</center>
 				 	</td>
 				 </tr>
 				<?php endwhile; ?>

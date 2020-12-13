@@ -79,7 +79,7 @@
 						<table class="table table-bordered table-hover">
 							<thead>
 								<tr>
-									<th class="text-center">#</th>
+									<th class="text-center">Sl.No</th>
 									<th class="text-center">Product Info</th>
 									<th class="text-center">Action</th>
 								</tr>

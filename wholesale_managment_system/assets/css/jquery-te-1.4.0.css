@@ -10,7 +10,7 @@
 /* editor's general field */
 .jqte {
 	margin:30px 0;
-	border:#000 1px solid;
+	border:rgb(190, 71, 71) 1px solid;
 	border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;
 	box-shadow:0 0 3px #999; -webkit-box-shadow:0 0 3px #999; -moz-box-shadow:0 0 3px #999;
 	overflow:hidden;
@@ -22,8 +22,8 @@
 	font-size:14px;
 }
 .jqte_focused {
-	border-color:#00AAE7;
-	box-shadow:0 0 10px #00BDFF; -webkit-box-shadow:0 0 10px #00BDFF; -moz-box-shadow:0 0 10px #00BDFF;
+	border-color:#49e700;
+	box-shadow:0 0 10px #49e700; -webkit-box-shadow:0 0 10px #49e700; -moz-box-shadow:0 0 10px #49e700;
 }
 /* toolbar */
 .jqte_toolbar {
@@ -349,7 +349,7 @@
 	margin:0 0 7px
 }
 .jqte_editor a:link, .jqte_editor a:link * {
-	color:#0066FF !important;
+	color:#49e700 !important;
 	text-decoration:underline;
 }
 .jqte_editor blockquote {
@@ -361,7 +361,7 @@
 	margin:0 10px 5px 0
 }
 .jqte_editor a[jqte-setlink], .jqte_editor a[jqte-setlink] * {
-	background:#3297FD !important;
+	background:#49e700 !important;
 	color:#FFF !important
 }
 .jqte_editor h1, .jqte_editor h2, .jqte_editor h3, .jqte_editor h4, .jqte_editor h5, .jqte_editor h6, .jqte_editor pre {
